@@ -11,16 +11,16 @@
 - You have to enter the keyword.
 - After enter the keywork, you have to enter the number of page to crawl.
 - This program only crawls blog preview content.
-- The data is stored in a csv file named 'naver_comment.csv'
+- The data is stored in a csv file named '/data/naver_comment.csv'
 
 ### Menu 2 (Youtube comment)
 - You have to enter the keyword.
 - First step, crawls the URL of all videos for that keyword.
 - The data is stored in a csv file named 'youtube_url_collection.csv'
 - Second step, read 'youtube_url_collection.csv' file.
-- Third step, access all URLs and crawl all comments, stored in a csv file named 'youtube_comment.csv'
+- Third step, access all URLs and crawl all comments, stored in a csv file named '/data/youtube_comment.csv'
 
 ### Menu 3 (Twitter posts)
 - You have to enter the keyword.
 - Search for that keyword on Twitter, and crawl all posts.
-- The data is stored in a csv file named 'twitter_comment.csv'
+- The data is stored in a csv file named '/data/twitter_comment.csv'
