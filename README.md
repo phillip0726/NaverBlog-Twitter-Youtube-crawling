@@ -25,10 +25,10 @@
 - The data is stored in a csv file named '/data/twitter_comment.csv'.
 
 ### Filtering spam
-- The words to be filtered are stored in /data/except_spam/spam.txt.
-- When A is executed, refined data is stored in /data/except_spam/.
+- The words to be filtered are stored in '/data/except_spam/spam.txt'.
+- When A is executed, refined data is stored in '/data/except_spam/'.
 
 ### Keyword Extraction 
-- /data/filtering_keyword_or.py perform an OR operation on the input keywords.
-- /data/filtering_keyword_and.py perform an AND operation on the input keywords.
-- When these files are executed, extracted dataes are stored in /data/include_keyword/.
+- '/data/filtering_keyword_or.py' perform an OR operation on the input keywords.
+- '/data/filtering_keyword_and.py' perform an AND operation on the input keywords.
+- When these files are executed, extracted dataes are stored in '/data/include_keyword/'.
