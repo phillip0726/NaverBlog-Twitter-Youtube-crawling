@@ -1,6 +1,5 @@
 # NaverBlog-Twitter-Youtube-crawling
 
-
 ## Functions
 - Menu 1 : Naver Blog crawling
 - Menu 2 : Youtube comment crawling
@@ -16,11 +15,20 @@
 ### Menu 2 (Youtube comment)
 - You have to enter the keyword.
 - First step, crawls the URL of all videos for that keyword.
-- The data is stored in a csv file named 'youtube_url_collection.csv'
+- The data is stored in a csv file named 'youtube_url_collection.csv'.
 - Second step, read 'youtube_url_collection.csv' file.
-- Third step, access all URLs and crawl all comments, stored in a csv file named '/data/youtube_comment.csv'
+- Third step, access all URLs and crawl all comments, stored in a csv file named '/data/youtube_comment.csv'.
 
 ### Menu 3 (Twitter posts)
 - You have to enter the keyword.
 - Search for that keyword on Twitter, and crawl all posts.
-- The data is stored in a csv file named '/data/twitter_comment.csv'
+- The data is stored in a csv file named '/data/twitter_comment.csv'.
+
+### Filtering spam
+- The words to be filtered are stored in /data/except_spam/spam.txt.
+- When A is executed, refined data is stored in /data/except_spam/.
+
+### Keyword Extraction 
+- /data/filtering_keyword_or.py perform an OR operation on the input keywords.
+- /data/filtering_keyword_and.py perform an AND operation on the input keywords.
+- When these files are executed, extracted dataes are stored in /data/include_keyword/.
