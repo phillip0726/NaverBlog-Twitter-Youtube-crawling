@@ -67,14 +67,14 @@ def video_url_crawling():
         
         ### csv 파일에 저장 [동영상 제목, 동영상 url]
         dataframe = pd.DataFrame(data, columns=["title", "url"])
-        dataframe.to_csv('./youtube_url_collection.csv', encoding='cp949')
+        dataframe.to_csv('../data/youtube_url_collection.csv', encoding='cp949')
         
         print('Finish working')        
         
 
 def video_comment_crawling():
     data = []
-    df = pd.read_csv('./youtube_url_collection.csv', encoding = 'cp949')
+    df = pd.read_csv('../data/youtube_url_collection.csv', encoding = 'cp949')
 
     driver = wd.Chrome('./tool/chromedriver.exe')
     driver.maximize_window()
@@ -126,7 +126,7 @@ def video_comment_crawling():
             
         if temporary_storage_num % 100 == 0:
             dataframe = pd.DataFrame(data, columns=["title", "content"])
-            dataframe.to_csv('./youtube_comment.csv', mode = 'a', encoding='cp949')
+            dataframe.to_csv('../data/youtube_comment.csv', mode = 'a', encoding='cp949')
             data = []
             
         temporary_storage_num += 1
@@ -138,7 +138,7 @@ def video_comment_crawling():
     
     ### 댓글 정보를 csv 파일에 저장
     dataframe = pd.DataFrame(data, columns=["title", "content"])
-    dataframe.to_csv('./youtube_comment.csv', mode = 'a', encoding='cp949')
+    dataframe.to_csv('../data/youtube_comment.csv', mode = 'a', encoding='cp949')
 
     print('Finish working')
 
