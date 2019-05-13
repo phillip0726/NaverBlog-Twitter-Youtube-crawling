@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
         
     elif(menu_num == YOUTUBE_CRAWLING):
-        #youtube_crawler.video_url_crawling()          # 유튜브에 있는 동영상 제목, url 전부 가져옴
+        youtube_crawler.video_url_crawling()          # 유튜브에 있는 동영상 제목, url 전부 가져옴
         youtube_crawler.video_comment_crawling()     # 유튜브 각 동영상에 있는 댓글 전부 가져옴
     
     elif(menu_num == TWITTER_CRAWLING):
