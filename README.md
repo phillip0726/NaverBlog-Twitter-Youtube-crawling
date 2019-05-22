@@ -32,7 +32,7 @@ pip install -r requestments.txt
 - Third step, access all URLs and crawl all comments, stored in a csv file named '/data/youtube_comment.csv'.
 ```
 
-### Twitter Posts Crawling
+### 2.3 Twitter Posts Crawling
 ```
 - You have to enter the keyword.
 - Search for that keyword on Twitter, and crawl all posts.
