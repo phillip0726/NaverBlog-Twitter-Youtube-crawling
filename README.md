@@ -53,7 +53,6 @@ pip install -r requestments.txt
 - When these files are executed, extracted dataes are stored in '/data/include_keyword/'.
 ```
 ## 4. Youtube video extraction, convert to mp3 files.
-### Video Extraction & convert to MP3
 ```
 - '/youtube_to_mp3/main.py' perform downloading youtube videos.
 - The video url to be downloaded is stored in '/data/youtube_url_collection.csv'.
