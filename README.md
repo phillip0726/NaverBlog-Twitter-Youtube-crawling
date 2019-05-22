@@ -42,8 +42,9 @@ pip install -r requestments.txt
 ## 3. Data Filtering, extraction
 ### 3.1 Filtering
 ```
+- '/data/except_spam.py' perform filtering for the spam keyword.
 - The words to be filtered are stored in '/data/except_spam/spam.txt'.
-- When A is executed, refined data is stored in '/data/except_spam/'.
+- When '/data/except_spam.py' is executed, refined data is stored in '/data/except_spam/'.
 ```
 ### 3.2 Extraction
 ```
@@ -52,4 +53,9 @@ pip install -r requestments.txt
 - When these files are executed, extracted dataes are stored in '/data/include_keyword/'.
 ```
 ## 4. Youtube video extraction, convert to mp3 files.
-* a
+### Video Extraction & convert to MP3
+```
+- '/youtube_to_mp3/main.py' perform downloading youtube videos.
+- The video url to be downloaded is stored in '/data/youtube_url_collection.csv'.
+- If you want to download another videos, add to video url list.
+```
