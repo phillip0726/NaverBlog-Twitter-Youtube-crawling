@@ -1,0 +1,5 @@
+bs4==0.0.1
+beautifulsoup4==4.7.1
+selenium==3.141.0
+pandas==0.23.4
+pytube==9.5.0
