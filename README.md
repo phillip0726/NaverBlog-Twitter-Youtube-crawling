@@ -57,5 +57,5 @@ pip install -r requestments.txt
 ```
 - '/youtube_to_mp3/main.py' perform downloading youtube videos.
 - The video url to be downloaded is stored in '/data/youtube_url_collection.csv'.
-- If you want to download another videos, add to video url list.
+- If you want to download another videos, add to the list of video URLs in '/data/youtube_url_collection.csv'.
 ```
