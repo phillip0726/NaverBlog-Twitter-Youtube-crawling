@@ -12,7 +12,7 @@ pip install -r requestments.txt
 ## 1. Functions
 > Crawling </br>
 > Data Filtering, extraction </br>
-> Youtube video extraction, convert to mp3 files. </br>
+> Youtube video extraction & Convert to mp3 files. </br>
 
 ## 2. Crawling
 ### 2.1 Naver Blog Crawling
@@ -52,7 +52,7 @@ pip install -r requestments.txt
 - '/data/filtering_keyword_and.py' perform an AND operation on the input keywords.
 - When these files are executed, extracted dataes are stored in '/data/include_keyword/'.
 ```
-## 4. Youtube video extraction, convert to mp3 files.
+## 4. Youtube video extraction & convert to mp3 files.
 ```
 - '/youtube_to_mp3/main.py' perform downloading youtube videos.
 - The video url to be downloaded is stored in '/data/youtube_url_collection.csv'.
