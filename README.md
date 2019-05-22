@@ -10,9 +10,9 @@ pip install -r requestments.txt
 ```
 
 ## 1. Functions
-- Crawling
-- Data Filtering, extraction
-- Youtube video extraction, convert to mp3 files.
+> Crawling </br>
+> Data Filtering, extraction </br>
+> Youtube video extraction, convert to mp3 files. </br>
 
 ## 2. Crawling
 ### 2.1 Naver Blog Crawling
