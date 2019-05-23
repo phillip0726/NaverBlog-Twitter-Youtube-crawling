@@ -18,7 +18,7 @@ pip install -r requestments.txt
 ### 2.1 Naver Blog Crawling
 ```
 - You have to enter the keyword.
-- After enter the keywork, you have to enter the number of page to crawl.
+- After enter the keyword, you have to enter the number of page to crawl.
 - This program only crawls blog preview content.
 - The data is stored in a csv file named '/data/naver_comment.csv'
 ```
@@ -29,7 +29,7 @@ pip install -r requestments.txt
 - First step, crawls the URL of all videos for that keyword.
 - The data is stored in a csv file named 'youtube_url_collection.csv'.
 - Second step, read 'youtube_url_collection.csv' file.
-- Third step, access all URLs and crawl all comments, stored in a csv file named '/data/youtube_comment.csv'.
+- Third step, access all URLs and crawl all comments, and stored in a csv file named '/data/youtube_comment.csv'.
 ```
 
 ### 2.3 Twitter Posts Crawling
