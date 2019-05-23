@@ -11,7 +11,7 @@ pip install -r requestments.txt
 
 ## 1. Functions
 > Crawling </br>
-> Data Filtering, extraction </br>
+> Data Cleaning, extraction </br>
 > Youtube video extraction & Convert to mp3 files. </br>
 
 ## 2. Crawling
@@ -39,8 +39,8 @@ pip install -r requestments.txt
 - The data is stored in a csv file named '/data/twitter_comment.csv'.
 ```
 
-## 3. Data Filtering, extraction
-### 3.1 Filtering
+## 3. Data Cleaning, extraction
+### 3.1 Cleaning
 ```
 - '/data/except_spam.py' perform filtering for the spam keyword.
 - The words to be filtered are stored in '/data/except_spam/spam.txt'.
