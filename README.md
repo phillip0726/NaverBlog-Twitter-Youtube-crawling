@@ -29,7 +29,7 @@ pip install -r requestments.txt
 - First step, crawls the URL of all videos for that keyword.
 - The data is stored in a csv file named 'youtube_url_collection.csv'.
 - Second step, read 'youtube_url_collection.csv' file.
-- Third step, access all URLs and crawl all comments, and stored in a csv file named '/data/youtube_comment.csv'.
+- Third step, access all URLs and crawl all comments, and stored in '/data/youtube_comment.csv'.
 ```
 
 ### 2.3 Twitter Posts Crawling
