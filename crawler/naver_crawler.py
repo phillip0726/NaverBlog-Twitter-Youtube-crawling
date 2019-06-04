@@ -46,26 +46,30 @@ def crawling():
         # page 로딩 시간 기다림
         time.sleep(2)
         for BLOG_NUM in range(1, BLOG_COUNT_PER_PAGE + 1):
-            title_selector = _const_title_selector.replace('%%BLOG_NUM%%',str(BLOG_NUM))
-            content_selector = _const_content_selector.replace('%%BLOG_NUM%%', str(BLOG_NUM))
+            try:
+                title_selector = _const_title_selector.replace('%%BLOG_NUM%%',str(BLOG_NUM))
+                content_selector = _const_content_selector.replace('%%BLOG_NUM%%', str(BLOG_NUM))
 
-            # 제목과 내용을 가져옴
-            title  = driver.find_element_by_css_selector(title_selector).text
-            content = driver.find_element_by_css_selector(content_selector).text
+                # 제목과 내용을 가져옴
+                title  = driver.find_element_by_css_selector(title_selector).text
+                content = driver.find_element_by_css_selector(content_selector).text
 
-            # 특수기호 없애는 작업
-            for idx in range(len(title)):
-                if not ((0 <= ord(title[idx]) < 128) or (0xac00 <= ord(title[idx]) <= 0xd7af)):
-                    title = title.replace(title[idx], ' ')
-                    
-            for idx in range(len(content)):
-                if not ((0 <= ord(content[idx]) < 128) or (0xac00 <= ord(content[idx]) <= 0xd7af)):
-                    content = content.replace(content[idx], ' ')
+                # 특수기호 없애는 작업
+                for idx in range(len(title)):
+                    if not ((0 <= ord(title[idx]) < 128) or (0xac00 <= ord(title[idx]) <= 0xd7af)):
+                        title = title.replace(title[idx], ' ')
+                        
+                for idx in range(len(content)):
+                    if not ((0 <= ord(content[idx]) < 128) or (0xac00 <= ord(content[idx]) <= 0xd7af)):
+                        content = content.replace(content[idx], ' ')
 
-            data.append([title, content])
+                data.append([title, content])
+                
+            except Exception as e:
+                pass
 
-        # 컴퓨터 메모리 때문에 100 page씩 데이터를 저장하고 버퍼를 지운다.
-        if temporary_storage_num % 100 == 0:
+        # 컴퓨터 메모리 때문에 50 page씩 데이터를 저장하고 버퍼를 지운다.
+        if temporary_storage_num % 50 == 0:
             dataframe = pd.DataFrame(data, columns=["title", "content"])
             dataframe.to_csv('../data/naver_comment.csv', mode='a', encoding='cp949')
             data = []
