@@ -53,7 +53,7 @@
 - When these files are executed, extracted dataes are stored in '/data/include_keyword/'.
 ```
 ## 4. Youtube video processing
-### 4.1 video -> mp3 file
+### 4.1 Video -> MP3
 ```
 - '/youtube_to_mp3/main.py' perform downloading youtube videos and convert to mp3 files.
 - The video url to be downloaded is stored in '/data/youtube_url_collection.csv'.
@@ -61,7 +61,7 @@
 - video/mp3 format : [video/mp3 num] [video/mp3 title]
 ```
 
-### 4.2 video -> text
+### 4.2 Video -> TEXT
 ```
 - '/youtube_to_text/main.py' perform operations similar to the Google STT.
 - The video is converted to TEXT and stored in 'video_text'.
