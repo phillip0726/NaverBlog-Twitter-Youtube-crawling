@@ -4,9 +4,9 @@
 - How to install
 
 ```
-git clone https://github.com/phillip0726/NaverBlog-Twitter-Youtube-crawling.git
-cd NaverBlog-Twitter-Youtube-crawling/
-pip install -r requestments.txt
+- git clone https://github.com/phillip0726/NaverBlog-Twitter-Youtube-crawling.git
+- cd NaverBlog-Twitter-Youtube-crawling/
+- pip install -r requestments.txt
 ```
 
 ## 1. Functions
@@ -52,10 +52,17 @@ pip install -r requestments.txt
 - '/data/filtering_keyword_and.py' perform an AND operation on the input keywords.
 - When these files are executed, extracted dataes are stored in '/data/include_keyword/'.
 ```
-## 4. Youtube video extraction & convert to mp3 files.
+## 4. Youtube video processing
+### 4.1 video -> mp3 file
 ```
-- '/youtube_to_mp3/main.py' perform downloading youtube videos.
+- '/youtube_to_mp3/main.py' perform downloading youtube videos and convert to mp3 files.
 - The video url to be downloaded is stored in '/data/youtube_url_collection.csv'.
 - If you want to download another videos, add to the list of video URLs in '/data/youtube_url_collection.csv'.
 - video/mp3 format : [video/mp3 num] [video/mp3 title]
+```
+
+### 4.2 video -> text
+```
+- '/youtube_to_text/main.py' perform operations similar to the Google STT.
+- The video is converted to TEXT and stored in 'video_text'.
 ```
